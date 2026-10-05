@@ -1,131 +1,147 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>جدول التطعيمات - Kindred Care</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "inverse-on-surface": "#eaf1ff",
-                      "primary-fixed": "#d8e2ff",
-                      "on-secondary-container": "#007165",
-                      "tertiary-fixed": "#ffdf9f",
-                      "on-tertiary-fixed-variant": "#5c4300",
-                      "on-primary-container": "#fefcff",
-                      "surface-container-low": "#eff4ff",
-                      "on-secondary-fixed": "#00201c",
-                      "secondary-container": "#62fae3",
-                      "secondary-fixed-dim": "#3cddc7",
-                      "surface": "#f8f9ff",
-                      "on-primary-fixed": "#001a43",
-                      "surface-container": "#e5eeff",
-                      "secondary": "#006b5f",
-                      "primary-fixed-dim": "#aec6ff",
-                      "on-error": "#ffffff",
-                      "surface-container-highest": "#d3e4fe",
-                      "on-tertiary-container": "#fffbff",
-                      "secondary-fixed": "#62fae3",
-                      "outline-variant": "#c2c6d6",
-                      "on-error-container": "#93000a",
-                      "tertiary": "#765700",
-                      "on-background": "#0b1c30",
-                      "surface-variant": "#d3e4fe",
-                      "inverse-primary": "#aec6ff",
-                      "on-tertiary-fixed": "#261a00",
-                      "error-container": "#ffdad6",
-                      "surface-dim": "#cbdbf5",
-                      "on-secondary": "#ffffff",
-                      "outline": "#727785",
-                      "surface-bright": "#f8f9ff",
-                      "surface-container-high": "#dce9ff",
-                      "on-primary-fixed-variant": "#004397",
-                      "inverse-surface": "#213145",
-                      "surface-container-lowest": "#ffffff",
-                      "tertiary-fixed-dim": "#f9bd22",
-                      "on-secondary-fixed-variant": "#005047",
-                      "on-surface": "#0b1c30",
-                      "surface-tint": "#0059c5",
-                      "background": "#f8f9ff",
-                      "on-surface-variant": "#424754",
-                      "tertiary-container": "#956e00",
-                      "on-tertiary": "#ffffff",
-                      "primary": "#0057c1",
-                      "primary-container": "#2570e5",
-                      "on-primary": "#ffffff",
-                      "error": "#ba1a1a"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.25rem",
-                      "lg": "0.5rem",
-                      "xl": "0.75rem",
-                      "full": "9999px"
-              },
-              "spacing": {
-                      "xl": "48px",
-                      "sm": "8px",
-                      "gutter": "24px",
-                      "xs": "4px",
-                      "lg": "24px",
-                      "md": "16px",
-                      "unit": "4px",
-                      "container-max": "1200px",
-                      "margin-mobile": "16px"
-              },
-              "fontFamily": {
-                      "headline-lg": ["Noto Sans Arabic", "sans-serif"],
-                      "body-md": ["Noto Sans Arabic", "sans-serif"],
-                      "headline-xl": ["Noto Sans Arabic", "sans-serif"],
-                      "body-lg": ["Noto Sans Arabic", "sans-serif"],
-                      "headline-lg-mobile": ["Noto Sans Arabic", "sans-serif"],
-                      "label-md": ["Noto Sans Arabic", "sans-serif"],
-                      "headline-md": ["Noto Sans Arabic", "sans-serif"],
-                      "label-sm": ["Noto Sans Arabic", "sans-serif"]
-              },
-              "fontSize": {
-                      "headline-lg": ["32px", {"lineHeight": "1.25", "fontWeight": "700"}],
-                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                      "headline-lg-mobile": ["28px", {"lineHeight": "1.25", "fontWeight": "700"}],
-                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
-                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                      "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#007165",
+                        "tertiary-fixed": "#ffdf9f",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-primary-container": "#fefcff",
+                        "surface-container-low": "#eff4ff",
+                        "on-secondary-fixed": "#00201c",
+                        "secondary-container": "#62fae3",
+                        "secondary-fixed-dim": "#3cddc7",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#001a43",
+                        "surface-container": "#e5eeff",
+                        "secondary": "#006b5f",
+                        "primary-fixed-dim": "#aec6ff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary-fixed": "#62fae3",
+                        "outline-variant": "#c2c6d6",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#765700",
+                        "on-background": "#0b1c30",
+                        "surface-variant": "#d3e4fe",
+                        "inverse-primary": "#aec6ff",
+                        "on-tertiary-fixed": "#261a00",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#cbdbf5",
+                        "on-secondary": "#ffffff",
+                        "outline": "#727785",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-fixed-variant": "#004397",
+                        "inverse-surface": "#213145",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "on-secondary-fixed-variant": "#005047",
+                        "on-surface": "#0b1c30",
+                        "surface-tint": "#0059c5",
+                        "background": "#f8f9ff",
+                        "on-surface-variant": "#424754",
+                        "tertiary-container": "#956e00",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#0057c1",
+                        "primary-container": "#2570e5",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "48px",
+                        "sm": "8px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Noto Sans Arabic", "sans-serif"],
+                        "body-md": ["Noto Sans Arabic", "sans-serif"],
+                        "headline-xl": ["Noto Sans Arabic", "sans-serif"],
+                        "body-lg": ["Noto Sans Arabic", "sans-serif"],
+                        "headline-lg-mobile": ["Noto Sans Arabic", "sans-serif"],
+                        "label-md": ["Noto Sans Arabic", "sans-serif"],
+                        "headline-md": ["Noto Sans Arabic", "sans-serif"],
+                        "label-sm": ["Noto Sans Arabic", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.25", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.25", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }]
+                    }
+                }
             }
-          }
         }
     </script>
     <style>
-        body { font-family: 'Noto Sans Arabic', sans-serif; }
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
     </style>
     <script src="script.js" defer></script>
 </head>
+
 <body class="bg-background text-on-background min-h-screen flex flex-col pt-[80px]">
     <!-- TopNavBar -->
     <header class="bg-surface fixed w-full top-0 z-50 shadow-sm bg-surface/80 backdrop-blur-md">
         <div class="flex justify-between items-center max-w-container-max mx-auto px-lg py-md">
-            <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
-                <span class="material-symbols-outlined" data-icon="pediatrics" style="font-variation-settings: 'FILL' 1;">pediatrics</span>
+            <a href="index.html"
+                class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
+                <span class="material-symbols-outlined" data-icon="pediatrics"
+                    style="font-variation-settings: 'FILL' 1;">pediatrics</span>
                 Kindred Care
             </a>
             <nav class="hidden md:flex gap-6 items-center">
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="schedule.html">الجدول الزمني</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="tips.html">نصائح صحية</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="clinics.html">العيادات</a>
-                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="index.html">من نحن</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95"
+                    href="schedule.html">الجدول الزمني</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95"
+                    href="tips.html">نصائح صحية</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95"
+                    href="clinics.html">العيادات</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95"
+                    href="index.html">من نحن</a>
             </nav>
             <div class="flex items-center gap-4">
-                <a href="clinics.html" class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 text-center">
+                <a href="clinics.html"
+                    class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 text-center">
                     Find a Clinic
                 </a>
-                <img alt="Parent Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant cursor-pointer active:scale-95 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUJ5ndVAXRLOLFpsJgDjDrt8LFw4ybQ_fgiO5nwEIq2qHV-ubes-_d7NSNzpEy2jXmBwYSLB4zz9gVnqSe62sDoVI45FPgxmVpjRGR9jm4lM0nS3se7FNmNp6gxIOv7wGiwrUlVjAfUyMWjVsGCVBktPxR9i53EbX0nnl9mzsQyuoZ1Q6pEz1xxYg4y9CKdz3n997VKEZ95y_5koOgFL-wwaJs_g03tEMX5tciB1bprZEpRJu3dFod"/>
+                <img alt="Parent Profile"
+                    class="w-10 h-10 rounded-full object-cover border border-outline-variant cursor-pointer active:scale-95 transition-transform"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUJ5ndVAXRLOLFpsJgDjDrt8LFw4ybQ_fgiO5nwEIq2qHV-ubes-_d7NSNzpEy2jXmBwYSLB4zz9gVnqSe62sDoVI45FPgxmVpjRGR9jm4lM0nS3se7FNmNp6gxIOv7wGiwrUlVjAfUyMWjVsGCVBktPxR9i53EbX0nnl9mzsQyuoZ1Q6pEz1xxYg4y9CKdz3n997VKEZ95y_5koOgFL-wwaJs_g03tEMX5tciB1bprZEpRJu3dFod" />
             </div>
         </div>
     </header>
@@ -141,18 +157,30 @@
         </div>
 
         <!-- Filter/Search Bar -->
-        <div class="bg-surface p-lg rounded-xl shadow-sm shadow-[rgba(42,115,232,0.08)] mb-xl border border-outline-variant/30">
+        <div
+            class="bg-surface p-lg rounded-xl shadow-sm shadow-[rgba(42,115,232,0.08)] mb-xl border border-outline-variant/30">
             <div class="flex flex-col md:flex-row gap-4 items-center">
                 <div class="w-full md:w-1/3 relative">
-                    <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline">search</span>
-                    <input class="w-full pr-10 pl-4 py-3 bg-surface-container-low border border-outline-variant rounded-full focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface" placeholder="ابحث عن تطعيم (مثال: DTaP)" type="text"/>
+                    <span
+                        class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+                    <input
+                        class="w-full pr-10 pl-4 py-3 bg-surface-container-low border border-outline-variant rounded-full focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface"
+                        placeholder="ابحث عن تطعيم (مثال: DTaP)" type="text" />
                 </div>
                 <div class="w-full md:w-2/3 flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
-                    <button class="whitespace-nowrap px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">الكل</button>
-                    <button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">الولادة</button>
-                    <button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">شهرين - 6 أشهر</button>
-                    <button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">سنة - سنتين</button>
-                    <button class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">4 - 6 سنوات</button>
+                    <button
+                        class="whitespace-nowrap px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">الكل</button>
+                    <button
+                        class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">الولادة</button>
+                    <button
+                        class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">شهرين
+                        - 6 أشهر</button>
+                    <button
+                        class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">سنة
+                        - سنتين</button>
+                    <button
+                        class="whitespace-nowrap px-4 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface-variant hover:bg-surface-container-highest font-label-md text-label-md transition-colors">4
+                        - 6 سنوات</button>
                 </div>
             </div>
         </div>
@@ -160,123 +188,174 @@
         <!-- Timeline / Bento Layout -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
             <!-- Age Group: Birth -->
-            <div class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-secondary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div
+                class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-secondary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
                 <div class="flex items-center gap-3 mb-md">
-                    <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">child_care</span>
                     </div>
                     <h2 class="font-headline-md text-headline-md text-on-surface">عند الولادة</h2>
                 </div>
                 <div class="space-y-4 relative z-10">
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-label-md text-label-md font-bold text-on-surface">BCG (الدرن)</h3>
-                            <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded-full font-label-sm text-label-sm">أساسي</span>
+                            <span
+                                class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded-full font-label-sm text-label-sm">أساسي</span>
                         </div>
                         <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي من مرض السل.</p>
                     </div>
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">HepB (التهاب الكبد ب) - الجرعة الأولى</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">HepB (التهاب الكبد ب) -
+                                الجرعة الأولى</h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يجب أن يعطى خلال 24 ساعة من الولادة.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يجب أن يعطى خلال 24 ساعة من
+                            الولادة.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Age Group: 2 Months -->
-            <div class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-primary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300 lg:col-span-2">
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div
+                class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-primary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300 lg:col-span-2">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
                 <div class="flex items-center gap-3 mb-md">
-                    <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">calendar_month</span>
                     </div>
                     <h2 class="font-headline-md text-headline-md text-on-surface">شهرين</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative z-10">
                     <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">DTaP (الثلاثي البكتيري)</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">DTaP (الثلاثي البكتيري)
+                            </h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">الدفتيريا، الكزاز، والسعال الديكي.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">الدفتيريا، الكزاز، والسعال
+                            الديكي.</p>
                     </div>
                     <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">IPV (شلل الأطفال المعطل)</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">IPV (شلل الأطفال المعطل)
+                            </h3>
                         </div>
                         <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي ضد شلل الأطفال.</p>
                     </div>
                     <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">Hib (المستدمية النزلية ب)</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">Hib (المستدمية النزلية ب)
+                            </h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي ضد الالتهاب الرئوي والتهاب السحايا.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي ضد الالتهاب الرئوي
+                            والتهاب السحايا.</p>
                     </div>
                     <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">PCV13 (المكورات الرئوية)</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">PCV13 (المكورات الرئوية)
+                            </h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي من بكتيريا المكورات الرئوية الخطيرة.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يحمي من بكتيريا المكورات
+                            الرئوية الخطيرة.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Age Group: 1 - 2 Years -->
-            <div class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-secondary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div
+                class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-secondary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
                 <div class="flex items-center gap-3 mb-md">
-                    <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+                    <div
+                        class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">child_care</span>
                     </div>
                     <h2 class="font-headline-md text-headline-md text-on-surface">سنة - سنتين</h2>
                 </div>
                 <div class="space-y-4 relative z-10">
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-label-md text-label-md font-bold text-on-surface">MMR (الحصبة والنكاف)</h3>
-                            <span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded-full font-label-sm text-label-sm">الجرعة الأولى</span>
+                            <span
+                                class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-1 rounded-full font-label-sm text-label-sm">الجرعة
+                                الأولى</span>
                         </div>
                         <p class="font-body-sm text-body-md text-on-surface-variant text-sm">يعطى عند عمر 12 شهراً.</p>
                     </div>
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-secondary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">Varicella (جدري الماء)</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">Varicella (جدري الماء)
+                            </h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">الجرعة الأولى للوقاية من جدري الماء.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">الجرعة الأولى للوقاية من
+                            جدري الماء.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">الجرعة الأولى للوقاية من
+                            جدري الماء.</p>
+
                     </div>
                 </div>
             </div>
 
             <!-- Age Group: 4 - 6 Years -->
-            <div class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-primary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div
+                class="bg-surface rounded-xl p-lg shadow-sm shadow-[rgba(42,115,232,0.08)] border-t-4 border-primary relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                </div>
                 <div class="flex items-center gap-3 mb-md">
-                    <div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
-                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">child_care</span>
                     </div>
                     <h2 class="font-headline-md text-headline-md text-on-surface">4 - 6 سنوات</h2>
                 </div>
                 <div class="space-y-4 relative z-10">
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-primary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-primary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">MMR (الحصبة والنكاف) - الجرعة الثانية</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">MMR (الحصبة والنكاف) -
+                                الجرعة الثانية</h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">جرعة معززة للحماية الكاملة.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">جرعة معززة للحماية الكاملة.
+                        </p>
                     </div>
-                    <div class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-primary/30 transition-colors">
+                    <div
+                        class="bg-surface-container-low p-md rounded-lg border border-outline-variant/50 hover:border-primary/30 transition-colors">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-label-md text-label-md font-bold text-on-surface">DTaP (الثلاثي البكتيري) - جرعة منشطة</h3>
+                            <h3 class="font-label-md text-label-md font-bold text-on-surface">DTaP (الثلاثي البكتيري) -
+                                جرعة منشطة</h3>
                         </div>
-                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">لتقوية المناعة قبل بدء المدرسة.</p>
+                        <p class="font-body-sm text-body-md text-on-surface-variant text-sm">لتقوية المناعة قبل بدء
+                            المدرسة.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Alert/Information Card -->
-            <div class="bg-surface-container-highest rounded-xl p-lg flex flex-col justify-center items-center text-center shadow-sm shadow-[rgba(42,115,232,0.08)]">
+            <div
+                class="bg-surface-container-highest rounded-xl p-lg flex flex-col justify-center items-center text-center shadow-sm shadow-[rgba(42,115,232,0.08)]">
                 <span class="material-symbols-outlined text-4xl text-primary mb-4">info</span>
                 <h3 class="font-headline-md text-headline-md text-on-surface mb-2">تذكير هام</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    الالتزام بمواعيد التطعيمات يضمن توفير أقصى حماية لطفلك. استشر طبيبك إذا تأخرت عن أي جرعة.
+                </p>
                 <p class="font-body-md text-body-md text-on-surface-variant">
                     الالتزام بمواعيد التطعيمات يضمن توفير أقصى حماية لطفلك. استشر طبيبك إذا تأخرت عن أي جرعة.
                 </p>
@@ -286,13 +365,18 @@
 
     <!-- Footer -->
     <footer class="bg-surface-container-highest w-full mt-xl border-t border-outline-variant">
-        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-lg py-xl gap-6">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-lg py-xl gap-6">
             <a href="index.html" class="font-headline-md text-headline-md text-primary">Kindred Care</a>
             <div class="flex gap-6 font-label-sm text-label-sm">
-                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors" href="#">Privacy Policy</a>
-                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors" href="#">Terms of Service</a>
-                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors" href="tips.html#faq">FAQ</a>
-                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors" href="#">Emergency Contact</a>
+                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors"
+                    href="#">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors"
+                    href="#">Terms of Service</a>
+                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors"
+                    href="tips.html#faq">FAQ</a>
+                <a class="text-on-surface-variant hover:text-primary underline-offset-4 hover:underline transition-colors"
+                    href="#">Emergency Contact</a>
             </div>
             <p class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
                 © 2024 Kindred Care Pediatric Health. All rights reserved.
@@ -300,4 +384,5 @@
         </div>
     </footer>
 </body>
+
 </html>

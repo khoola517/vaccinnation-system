@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kindred Care - رعاية الأطفال واللقاحات</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-container": "#007165",
+                        "tertiary-fixed": "#ffdf9f",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-primary-container": "#fefcff",
+                        "surface-container-low": "#eff4ff",
+                        "on-secondary-fixed": "#00201c",
+                        "secondary-container": "#62fae3",
+                        "secondary-fixed-dim": "#3cddc7",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#001a43",
+                        "surface-container": "#e5eeff",
+                        "secondary": "#006b5f",
+                        "primary-fixed-dim": "#aec6ff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary-fixed": "#62fae3",
+                        "outline-variant": "#c2c6d6",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#765700",
+                        "on-background": "#0b1c30",
+                        "surface-variant": "#d3e4fe",
+                        "inverse-primary": "#aec6ff",
+                        "on-tertiary-fixed": "#261a00",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#cbdbf5",
+                        "on-secondary": "#ffffff",
+                        "outline": "#727785",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-fixed-variant": "#004397",
+                        "inverse-surface": "#213145",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#f9bd22",
+                        "on-secondary-fixed-variant": "#005047",
+                        "on-surface": "#0b1c30",
+                        "surface-tint": "#0059c5",
+                        "background": "#f8f9ff",
+                        "on-surface-variant": "#424754",
+                        "tertiary-container": "#956e00",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#0057c1",
+                        "primary-container": "#2570e5",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "48px",
+                        "sm": "8px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "unit": "4px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-md": ["Noto Sans", "sans-serif"],
+                        "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+                        "body-lg": ["Noto Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Noto Sans", "sans-serif"],
+                        "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-sm": ["Noto Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.25", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "1.25", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased pt-[80px]">
+    <!-- TopNavBar (Shared Component) -->
+    <header class="bg-surface fixed w-full top-0 z-50 shadow-sm bg-surface/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-lg py-md">
+            <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
+                <span class="material-symbols-outlined" data-icon="pediatrics" style="font-variation-settings: 'FILL' 1;">pediatrics</span>
+                Kindred Care
+            </a>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="schedule.html">الجدول الزمني</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="tips.html">نصائح صحية</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="clinics.html">العيادات</a>
+                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 cursor-pointer active:scale-95" href="index.html">من نحن</a>
+            </nav>
+            <div id="header-profile-section" class="flex items-center gap-4">
+                <a href="clinics.html" class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 text-center">
+                    Find a Clinic
+                </a>
+                <img alt="Parent Profile" class="w-10 h-10 rounded-full object-cover border-2 border-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8XWlnYYjG2Ecbr6zxiiuYcmo5UofmaKw_U9BhNPD4cyVTg6lqF7hRMLzJ5FyaojPS8l9eaJjKwZSpSsHYMVFMvLcniuDHuT_z7gX8amb9lzJewIiRAFlAVcXhj8Caso3ft0PBKqrDjsVvy1xZDWQKggxbkB5tb0WZ8pS_dhPUaF0suEt0r_UPcB-8qtFCwPKk-hmitKKlZicV4G2lzwLJPW3Jsnq7FPUedDjjgJeRkv1trDUfQkT"/>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-container-max mx-auto px-margin-mobile md:px-lg pb-xl">
+        <!-- Hero Section -->
+        <section class="mt-xl md:mt-24 mb-xl bg-surface-container-low rounded-[32px] overflow-hidden relative shadow-[0_4px_24px_rgba(42,115,232,0.08)]">
+            <div class="grid md:grid-cols-2 items-center gap-lg">
+                <div class="p-lg md:p-12 z-10">
+                    <div class="inline-flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-4 py-1.5 rounded-full mb-6">
+                        <span class="material-symbols-outlined text-[16px]" data-icon="shield">shield</span>
+                        رعاية آمنة وموثوقة
+                    </div>
+                    <h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-on-background mb-4">
+                        حماية مستقبل طفلك تبدأ <span class="text-primary">بخطوة بسيطة</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-lg">
+                        نوفر في Kindred Care بيئة دافئة وآمنة لضمان حصول طفلك على التطعيمات اللازمة في وقتها المناسب. خبراؤنا هنا لدعمكم في كل خطوة.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="clinics.html" class="bg-primary text-on-primary font-label-md text-label-md px-8 py-3 rounded-full hover:bg-primary-container transition-colors duration-200 text-center w-full sm:w-auto">
+                            احجز موعداً
+                        </a>
+                        <a href="schedule.html" class="bg-transparent border border-secondary text-secondary font-label-md text-label-md px-8 py-3 rounded-full hover:bg-secondary/5 transition-colors duration-200 text-center w-full sm:w-auto">
+                            عرض الجدول
+                        </a>
+                    </div>
+                </div>
+                <div class="h-64 md:h-full relative min-h-[400px]">
+                    <img alt="Mother and Child" class="absolute inset-0 w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7DRLPPberONuAUVhr3lEXOHFVzoOSoApQ90OuH3OrsPrwfdqv_SkO_13uR-5po6wavyO3nf1p1ApGvzk0EqTeuTQGmLlZ0Wff7EjXQllQKDuiPhJdr6Srx43ND8KCQuH3-XFfZ1rI4vnnaXQMEiCfvGkLebIGeOz9gHoMzXPdTS1zPKBTnHS57h3vXWp1fxPD5GeRCxGPv5PBGuDiNPSunU9md_AGor5HDsioXFN1gOZLmfbCQK02"/>
+                    <!-- Soft gradient overlay to blend image with background -->
+                    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-surface-container-low/20 to-surface-container-low md:hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Vaccinate Section (Bento Grid) -->
+        <section class="mb-xl py-lg">
+            <div class="text-center mb-12">
+                <h2 class="font-headline-lg text-headline-lg text-on-background mb-2">لماذا التطعيم مهم؟</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">فهم أهمية اللقاحات في بناء مناعة قوية لمجتمع صحي.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-surface rounded-xl p-6 shadow-[0_4px_24px_rgba(42,115,232,0.08)] border border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+                    <div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined text-3xl" data-icon="health_and_safety" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+                    </div>
+                    <h3 class="font-headline-md text-[20px] text-on-background mb-2">وقاية فعالة</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">اللقاحات هي خط الدفاع الأول ضد العديد من الأمراض الخطيرة التي يمكن الوقاية منها بسهولة.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-surface rounded-xl p-6 shadow-[0_4px_24px_rgba(42,115,232,0.08)] border border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+                    <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined text-3xl" data-icon="groups" style="font-variation-settings: 'FILL' 1;">groups</span>
+                    </div>
+                    <h3 class="font-headline-md text-[20px] text-on-background mb-2">مناعة القطيع</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">بتطعيم طفلك، أنت لا تحميه فقط، بل تساهم في حماية المجتمع ككل، خاصة الفئات الأكثر ضعفاً.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-surface rounded-xl p-6 shadow-[0_4px_24px_rgba(42,115,232,0.08)] border border-outline-variant/30 flex flex-col items-center text-center relative overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-tertiary"></div>
+                    <div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <span class="material-symbols-outlined text-3xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    </div>
+                    <h3 class="font-headline-md text-[20px] text-on-background mb-2">أمان مثبت</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">تخضع جميع اللقاحات لاختبارات صارمة لضمان أعلى معايير الجودة والسلامة قبل اعتمادها للاستخدام.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Shared Component) -->
+    <footer class="bg-surface-container-highest w-full mt-xl border-t border-outline-variant py-xl">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-lg">
+            <a href="index.html" class="font-headline-md text-headline-md text-primary mb-6 md:mb-0 cursor-pointer">
+                Kindred Care
+            </a>
+            <nav class="flex flex-wrap justify-center gap-6 mb-6 md:mb-0">
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="tips.html#faq">FAQ</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors underline-offset-4 hover:underline" href="#">Emergency Contact</a>
+            </nav>
+            <div class="font-body-md text-body-md text-on-surface-variant">
+                © 2024 Kindred Care Pediatric Health. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

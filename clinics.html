@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kindred Care - عياداتنا وحجز المواعيد</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#eaf1ff",
+                    "primary-fixed": "#d8e2ff",
+                    "on-secondary-container": "#007165",
+                    "tertiary-fixed": "#ffdf9f",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-primary-container": "#fefcff",
+                    "surface-container-low": "#eff4ff",
+                    "on-secondary-fixed": "#00201c",
+                    "secondary-container": "#62fae3",
+                    "secondary-fixed-dim": "#3cddc7",
+                    "surface": "#f8f9ff",
+                    "on-primary-fixed": "#001a43",
+                    "surface-container": "#e5eeff",
+                    "secondary": "#006b5f",
+                    "primary-fixed-dim": "#aec6ff",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#d3e4fe",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-fixed": "#62fae3",
+                    "outline-variant": "#c2c6d6",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#765700",
+                    "on-background": "#0b1c30",
+                    "surface-variant": "#d3e4fe",
+                    "inverse-primary": "#aec6ff",
+                    "on-tertiary-fixed": "#261a00",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary": "#ffffff",
+                    "outline": "#727785",
+                    "surface-bright": "#f8f9ff",
+                    "surface-container-high": "#dce9ff",
+                    "on-primary-fixed-variant": "#004397",
+                    "inverse-surface": "#213145",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#f9bd22",
+                    "on-secondary-fixed-variant": "#005047",
+                    "on-surface": "#0b1c30",
+                    "surface-tint": "#0059c5",
+                    "background": "#f8f9ff",
+                    "on-surface-variant": "#424754",
+                    "tertiary-container": "#956e00",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#0057c1",
+                    "primary-container": "#2570e5",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "48px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "lg": "24px",
+                    "md": "16px",
+                    "unit": "4px",
+                    "container-max": "1200px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Noto Sans Arabic"],
+                    "body-md": ["Noto Sans Arabic"],
+                    "headline-xl": ["Noto Sans Arabic"],
+                    "body-lg": ["Noto Sans Arabic"],
+                    "headline-lg-mobile": ["Noto Sans Arabic"],
+                    "label-md": ["Noto Sans Arabic"],
+                    "headline-md": ["Noto Sans Arabic"],
+                    "label-sm": ["Noto Sans Arabic"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.25", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.25", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+        body { font-family: 'Noto Sans Arabic', sans-serif; }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-background text-on-background min-h-screen pt-24 pb-12">
+    <!-- TopNavBar -->
+    <header class="bg-surface fixed w-full top-0 z-50 shadow-sm bg-surface/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-lg py-md">
+            <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
+                <span class="material-symbols-outlined" data-icon="pediatrics" style="font-variation-settings: 'FILL' 1;">pediatrics</span>
+                Kindred Care
+            </a>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="schedule.html">الجدول الزمني</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="tips.html">نصائح صحية</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="clinics.html">العيادات</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="index.html">من نحن</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="clinics.html" class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 text-center">
+                    Find a Clinic
+                </a>
+                <img alt="Parent Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant cursor-pointer active:scale-95 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSgr_HC5VN2_JVEvYlWav-myCI3agbO57dxdvSF68vB5mtBCLitCQls7dvbOeVJ93T1LaeY6zORX6SZ5qRKVJy-Cq6fKwBLF5WegA5DtTue8kF_NNAP6tqHSmGt2PcCG9b9JJ6WAGOGtideBy1IrvlSJN9iGbySvFvxrZMzGQs3uAvmxWqabZwBATSyZOuFf9Lb-xTuXWgMWvB8X2ypXPUdw8Pc5kfMWI0YsBU8mjJ1VP1xzNNeTtp"/>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+        <!-- Header -->
+        <header class="mb-xl text-center md:text-right">
+            <h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-sm">ابحث عن عيادة واحجز موعداً</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">اختر من بين شبكة عياداتنا المتخصصة في رعاية الأطفال لضمان صحة وسلامة طفلك في بيئة مريحة وودية.</p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+            <!-- Clinics List & Map -->
+            <div class="lg:col-span-8 flex flex-col gap-md">
+                <!-- Map Placeholder -->
+                <div class="w-full h-64 md:h-96 rounded-xl bg-surface-container-high border border-outline-variant overflow-hidden relative shadow-sm" style="box-shadow: 0 1px 2px 0 rgba(42, 115, 232, 0.08);">
+                    <div class="absolute inset-0 bg-surface-container flex flex-col items-center justify-center">
+                        <span class="material-symbols-outlined text-4xl text-primary/50 mb-2">map</span>
+                        <p class="font-body-md text-body-md text-on-surface-variant">خريطة العيادات التفاعلية</p>
+                    </div>
+                </div>
+
+                <!-- Clinic Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-md mt-md">
+                    <!-- Card 1 -->
+                    <div class="bg-surface p-md rounded-xl border border-outline-variant shadow-sm relative overflow-hidden group hover:border-primary/30 transition-colors" style="box-shadow: 0 4px 12px 0 rgba(42, 115, 232, 0.08);">
+                        <div class="absolute right-0 top-0 bottom-0 w-1 bg-secondary"></div>
+                        <div class="flex justify-between items-start mb-sm">
+                            <h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">عيادة دبي المركزية للأطفال</h3>
+                            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm">مفتوح الآن</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant mb-2">
+                            <span class="material-symbols-outlined text-[18px]">location_on</span>
+                            <p class="font-body-md text-body-md text-sm">شارع الشيخ زايد، دبي، الإمارات</p>
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant mb-4">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <p class="font-body-md text-body-md text-sm dir-ltr text-left">+971 4 123 4567</p>
+                        </div>
+                        <button onclick="document.querySelector('select').selectedIndex = 0;" class="w-full py-2 border-2 border-secondary text-secondary rounded-full font-label-md text-label-md hover:bg-secondary/5 transition-colors">اختر هذه العيادة</button>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-surface p-md rounded-xl border border-outline-variant shadow-sm relative overflow-hidden group hover:border-primary/30 transition-colors" style="box-shadow: 0 4px 12px 0 rgba(42, 115, 232, 0.08);">
+                        <div class="absolute right-0 top-0 bottom-0 w-1 bg-tertiary-fixed-dim"></div>
+                        <div class="flex justify-between items-start mb-sm">
+                            <h3 class="font-headline-md text-headline-md text-on-surface text-[20px]">مركز أبوظبي التخصصي</h3>
+                            <span class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full font-label-sm text-label-sm">يغلق قريباً</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant mb-2">
+                            <span class="material-symbols-outlined text-[18px]">location_on</span>
+                            <p class="font-body-md text-body-md text-sm">شارع الكورنيش، أبوظبي، الإمارات</p>
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant mb-4">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <p class="font-body-md text-body-md text-sm dir-ltr text-left">+971 2 987 6543</p>
+                        </div>
+                        <button onclick="document.querySelector('select').selectedIndex = 1;" class="w-full py-2 border border-outline text-on-surface-variant rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-colors">اختر هذه العيادة</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="lg:col-span-4">
+                <div class="bg-surface rounded-xl p-lg border border-outline-variant shadow-sm sticky top-32" style="box-shadow: 0 8px 24px 0 rgba(42, 115, 232, 0.08);">
+                    <h2 class="font-headline-md text-headline-md text-primary mb-md text-[24px]">حجز موعد سريع</h2>
+                    <form class="flex flex-col gap-md">
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface">العيادة المحددة</label>
+                            <div class="relative">
+                                <select class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none transition-all">
+                                    <option>عيادة دبي المركزية للأطفال</option>
+                                    <option>مركز أبوظبي التخصصي</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface">نوع الزيارة</label>
+                            <div class="relative">
+                                <select class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none transition-all">
+                                    <option>فحص دوري</option>
+                                    <option>تطعيم</option>
+                                    <option>استشارة طبية</option>
+                                    <option>حالة مرضية</option>
+                                </select>
+                                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant">expand_more</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-md text-label-md text-on-surface">التاريخ</label>
+                                <input class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="date"/>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="font-label-md text-label-md text-on-surface">الوقت</label>
+                                <input class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" type="time"/>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface">اسم الطفل</label>
+                            <input class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="أدخل اسم الطفل" type="text" required/>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="font-label-md text-label-md text-on-surface">رقم التواصل</label>
+                            <input class="w-full bg-[#F1F5F9] border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all dir-ltr text-right" placeholder="050 xxxx xxx" type="tel" required/>
+                        </div>
+                        <div class="mt-4 p-4 bg-tertiary-fixed/30 rounded-lg flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-tertiary">info</span>
+                            <p class="font-body-md text-body-md text-sm text-on-tertiary-fixed-variant">سيتم تأكيد الموعد عبر رسالة نصية قصيرة (SMS) في غضون 15 دقيقة.</p>
+                        </div>
+                        <button class="w-full mt-4 bg-primary text-on-primary py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm text-center" type="submit">تأكيد الحجز</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full mt-xl bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-lg py-xl">
+            <div class="mb-6 md:mb-0 text-center md:text-right">
+                <a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-2 block" href="index.html">Kindred Care</a>
+                <p class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface text-sm">© 2024 Kindred Care Pediatric Health. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface underline-offset-4 hover:underline hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface underline-offset-4 hover:underline hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface underline-offset-4 hover:underline hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="tips.html#faq">FAQ</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface underline-offset-4 hover:underline hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Emergency Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

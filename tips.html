@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>نصائح صحية وأسئلة شائعة - Kindred Care</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#eaf1ff",
+                      "primary-fixed": "#d8e2ff",
+                      "on-secondary-container": "#007165",
+                      "tertiary-fixed": "#ffdf9f",
+                      "on-tertiary-fixed-variant": "#5c4300",
+                      "on-primary-container": "#fefcff",
+                      "surface-container-low": "#eff4ff",
+                      "on-secondary-fixed": "#00201c",
+                      "secondary-container": "#62fae3",
+                      "secondary-fixed-dim": "#3cddc7",
+                      "surface": "#f8f9ff",
+                      "on-primary-fixed": "#001a43",
+                      "surface-container": "#e5eeff",
+                      "secondary": "#006b5f",
+                      "primary-fixed-dim": "#aec6ff",
+                      "on-error": "#ffffff",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary-fixed": "#62fae3",
+                      "outline-variant": "#c2c6d6",
+                      "on-error-container": "#93000a",
+                      "tertiary": "#765700",
+                      "on-background": "#0b1c30",
+                      "surface-variant": "#d3e4fe",
+                      "inverse-primary": "#aec6ff",
+                      "on-tertiary-fixed": "#261a00",
+                      "error-container": "#ffdad6",
+                      "surface-dim": "#cbdbf5",
+                      "on-secondary": "#ffffff",
+                      "outline": "#727785",
+                      "surface-bright": "#f8f9ff",
+                      "surface-container-high": "#dce9ff",
+                      "on-primary-fixed-variant": "#004397",
+                      "inverse-surface": "#213145",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#f9bd22",
+                      "on-secondary-fixed-variant": "#005047",
+                      "on-surface": "#0b1c30",
+                      "surface-tint": "#0059c5",
+                      "background": "#f8f9ff",
+                      "on-surface-variant": "#424754",
+                      "tertiary-container": "#956e00",
+                      "on-tertiary": "#ffffff",
+                      "primary": "#0057c1",
+                      "primary-container": "#2570e5",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "48px",
+                      "sm": "8px",
+                      "gutter": "24px",
+                      "xs": "4px",
+                      "lg": "24px",
+                      "md": "16px",
+                      "unit": "4px",
+                      "container-max": "1200px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+                      "body-md": ["Noto Sans Arabic", "sans-serif"],
+                      "headline-xl": ["Plus Jakarta Sans", "sans-serif"],
+                      "body-lg": ["Noto Sans Arabic", "sans-serif"],
+                      "headline-lg-mobile": ["Plus Jakarta Sans", "sans-serif"],
+                      "label-md": ["Noto Sans Arabic", "sans-serif"],
+                      "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+                      "label-sm": ["Noto Sans Arabic", "sans-serif"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.25", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "1.25", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body { font-family: 'Noto Sans Arabic', sans-serif; }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col pt-[80px]">
+    <!-- TopNavBar -->
+    <header class="bg-surface fixed w-full top-0 z-50 shadow-sm bg-surface/80 backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-lg py-md">
+            <a href="index.html" class="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2 cursor-pointer">
+                <span class="material-symbols-outlined" data-icon="pediatrics" style="font-variation-settings: 'FILL' 1;">pediatrics</span>
+                Kindred Care
+            </a>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="schedule.html">الجدول الزمني</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="tips.html">نصائح صحية</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="clinics.html">العيادات</a>
+                <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:scale-95" href="index.html">من نحن</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="clinics.html" class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-2 rounded-full hover:bg-primary-container transition-colors duration-200 text-center">
+                    Find a Clinic
+                </a>
+                <img alt="Parent Profile" class="w-10 h-10 rounded-full object-cover border border-outline-variant cursor-pointer active:scale-95 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUDJJ-CcTuQylu7yjTxQ0O7WRsR5uZUkIHKmIaYbCljaOBXKQ7D24FAEXNau_YwfpMswNpGOdYyvWfUu1DJszvyQ5exLU9oOH6chNJ1PaxxuSTxLGsC6rERL3pSsxcs5vuU6577OjT4sSOToYIrNMFGuJffoBUODUTw2luMOvhnSC6j1DtpX6LHUJFWyjzN259OzvElw0rx2N2jOeS_zP4CaVG9A9dDar6jNBjx70ISyppviYWJsow"/>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow pt-8 pb-xl px-margin-mobile md:px-lg max-w-container-max mx-auto w-full">
+        <!-- Hero Section -->
+        <section class="mb-xl text-center md:text-right flex flex-col md:flex-row items-center gap-lg">
+            <div class="flex-1">
+                <h1 class="font-headline-xl text-headline-xl text-primary mb-md hidden md:block">نصائح صحية لراحة بالك</h1>
+                <h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-md md:hidden">نصائح صحية لراحة بالك</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">نحن هنا لندعمك في رحلة أمومتك وأبوتك بخبرة طبية ولمسة حانية. اكتشفي مقالاتنا وإجاباتنا على أسئلتك الشائعة.</p>
+            </div>
+            <div class="flex-1 w-full rounded-xl overflow-hidden shadow-sm" style="box-shadow: 0 4px 12px 0 rgba(42, 115, 232, 0.08);">
+                <img alt="Healthcare professional with family" class="w-full h-64 md:h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv6TwrCWhHDTlf1WejWkYDXzRL7FN-O6QBeRW8Rsok4H-BXCUl9B971WzVkmVv4B22LEm8_bj7IGr1oTz8il5ewdqOJ4FR24otwe_FiYfO1uSVj9n_hrH36z-eDadu8sJLvMtmVddwd8qkJNFvLixfzwrKuWYJpS4c7mUDSs5ui_djfg-KxDV8nOEjhnTEYiMAG73EHo6kpKSzRAZM8Izz2-SI0hXIv73l8DmJTMRANBlaxkMhkZVX"/>
+            </div>
+        </section>
+
+        <!-- Topic Cards Bento Grid -->
+        <section class="mb-xl">
+            <h2 class="font-headline-lg text-headline-lg text-on-background mb-lg hidden md:block">مقالات مميزة</h2>
+            <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background mb-lg md:hidden">مقالات مميزة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <!-- Card 1 -->
+                <article class="bg-surface rounded-xl p-lg flex flex-col relative overflow-hidden group cursor-pointer" style="box-shadow: 0 2px 8px 0 rgba(42, 115, 232, 0.08);">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-secondary opacity-80"></div>
+                    <div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">التحضير للتطعيم</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md">خطوات بسيطة لتهدئة طفلك قبل وأثناء موعد التطعيم لتقليل التوتر.</p>
+                    <a class="font-label-md text-label-md text-primary flex items-center gap-xs" href="#">
+                        اقرأ المزيد
+                        <span class="material-symbols-outlined text-sm">arrow_back</span>
+                    </a>
+                </article>
+                <!-- Card 2 -->
+                <article class="bg-surface rounded-xl p-lg flex flex-col relative overflow-hidden group cursor-pointer" style="box-shadow: 0 2px 8px 0 rgba(42, 115, 232, 0.08);">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-tertiary-fixed-dim opacity-80"></div>
+                    <div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">healing</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">التعامل مع الأعراض الجانبية</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md">كيفية التعامل مع الحمى الخفيفة أو الألم الموضعي بعد التطعيم بطريقة آمنة.</p>
+                    <a class="font-label-md text-label-md text-primary flex items-center gap-xs" href="#">
+                        اقرأ المزيد
+                        <span class="material-symbols-outlined text-sm">arrow_back</span>
+                    </a>
+                </article>
+                <!-- Card 3 -->
+                <article class="bg-surface rounded-xl p-lg flex flex-col relative overflow-hidden group cursor-pointer" style="box-shadow: 0 2px 8px 0 rgba(42, 115, 232, 0.08);">
+                    <div class="absolute left-0 top-0 bottom-0 w-2 bg-primary-fixed-dim opacity-80"></div>
+                    <div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-md">
+                        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forum</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-on-background mb-sm group-hover:text-primary transition-colors">خرافات شائعة</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-md">تصحيح المفاهيم الخاطئة حول صحة الأطفال وتطعيماتهم بمعلومات موثوقة.</p>
+                    <a class="font-label-md text-label-md text-primary flex items-center gap-xs" href="#">
+                        اقرأ المزيد
+                        <span class="material-symbols-outlined text-sm">arrow_back</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section id="faq" class="mb-xl bg-surface-container-lowest rounded-xl p-lg md:p-xl shadow-sm border border-outline-variant/30" style="box-shadow: 0 2px 12px 0 rgba(42, 115, 232, 0.04);">
+            <div class="flex items-center gap-sm mb-lg">
+                <span class="material-symbols-outlined text-primary text-3xl" data-icon="help_outline">help_outline</span>
+                <h2 class="font-headline-lg text-headline-lg text-on-background hidden md:block">الأسئلة الشائعة</h2>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-background md:hidden">الأسئلة الشائعة</h2>
+            </div>
+            <div class="space-y-md">
+                <!-- Accordion Item 1 -->
+                <details class="group border-b border-outline-variant/50 pb-md" open>
+                    <summary class="flex justify-between items-center font-label-md text-label-md md:font-headline-md md:text-headline-md font-semibold cursor-pointer list-none text-on-background group-hover:text-primary transition-colors">
+                        متى يجب أن أعطي طفلي خافض للحرارة؟
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="mt-md font-body-md text-body-md text-on-surface-variant">
+                        يُنصح بإعطاء خافض الحرارة إذا ارتفعت درجة حرارة الطفل عن 38.5 درجة مئوية أو إذا كان يشعر بالانزعاج والألم. تأكدي دائمًا من الجرعة المناسبة لوزن وعمر طفلك، واستشيري طبيبك إذا استمرت الحمى لأكثر من 24 ساعة.
+                    </div>
+                </details>
+                <!-- Accordion Item 2 -->
+                <details class="group border-b border-outline-variant/50 pb-md">
+                    <summary class="flex justify-between items-center font-label-md text-label-md md:font-headline-md md:text-headline-md font-semibold cursor-pointer list-none text-on-background group-hover:text-primary transition-colors">
+                        هل من الآمن تأخير بعض التطعيمات؟
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="mt-md font-body-md text-body-md text-on-surface-variant">
+                        الالتزام بجدول التطعيمات الموصى به هو الطريقة الأفضل لحماية طفلك من الأمراض الخطيرة. تأخير التطعيمات قد يترك طفلك عرضة للعدوى في وقت مبكر من حياته. ناقشي أي مخاوف مع طبيب الأطفال الخاص بك.
+                    </div>
+                </details>
+                <!-- Accordion Item 3 -->
+                <details class="group pb-md">
+                    <summary class="flex justify-between items-center font-label-md text-label-md md:font-headline-md md:text-headline-md font-semibold cursor-pointer list-none text-on-background group-hover:text-primary transition-colors">
+                        ماذا أفعل إذا ظهر تورم مكان الحقنة؟
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div class="mt-md font-body-md text-body-md text-on-surface-variant">
+                        الاحمرار والتورم الخفيف مكان الحقنة رد فعل طبيعي وشائع. يمكنك وضع كمادات باردة ونظيفة على المنطقة لتقليل التورم. إذا زاد الاحمرار بشكل كبير أو استمر لعدة أيام، يرجى التواصل مع العيادة.
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full mt-xl bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-lg py-xl">
+            <a href="index.html" class="font-headline-md text-headline-md text-primary dark:text-primary-fixed mb-md md:mb-0">
+                Kindred Care
+            </a>
+            <nav class="flex flex-wrap justify-center gap-md mb-md md:mb-0">
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-secondary-fixed transition-colors underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-secondary-fixed transition-colors underline-offset-4 hover:underline" href="#">Terms of Service</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-secondary-fixed transition-colors underline-offset-4 hover:underline" href="#faq">FAQ</a>
+                <a class="font-label-sm text-label-sm text-on-surface-variant dark:text-on-surface hover:text-primary dark:hover:text-secondary-fixed transition-colors underline-offset-4 hover:underline" href="#">Emergency Contact</a>
+            </nav>
+            <div class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim text-center md:text-right">
+                © 2024 Kindred Care Pediatric Health. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
